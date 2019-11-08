@@ -1,0 +1,18 @@
+#!/bin/bash
+
+#:      Name: Wall chat
+#:      Description: Secure chat via wall command on remote server over ssh
+#:      Dependencies: ssh
+#:      Date: Sep 2016.
+#:      Version: v1
+#:      Author: Partybreaker <zurkoprekidac@gmail.com>
+
+echo "Enter your nickname: "
+read nick
+echo "For quitting chat, please enter EOC"
+
+while [ "$text" != "EOC" ] | [ "$text" != "eoc" ]; do
+        read text
+        wall -n $nick : $text
+#       sleep 1         #flood protection
+done
