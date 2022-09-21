@@ -4,7 +4,7 @@
 #:	Description: Engenius access point (openWRT) mac address whitelist updater
 #:	Date: September 2019
 #:	Version: v1
-#:	Author: Partybreaker <zurkoprekidac@gmail
+#:	Author: Partybreaker <zurkoprekidac@gmail>
 
 dirname=$(date +"%Y-%m-%d")
 declare -i i=0
